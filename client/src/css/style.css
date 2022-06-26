@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container {
+  width: 100%;
+  height: 130vh;
+  background-color: #757575;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 140rem;
+  height: 110vh;
+  background-color: #f50808;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  gap: 6.1rem;
+  padding: 5rem 0rem 5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(140rem / 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 5.5rem;
+}
+
+.days div {
+  font-size: 3.5rem;
+  margin: 0.3rem;
+  width: calc(140rem / 10);
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+div.free {
+  opacity: 0.8;
+  background-color: #CC9795;
+  border: 0.5px solid black;
+}
+
+.days div:hover{
+  background-color: #a13434;
+  border: 0.2rem solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #ffffff;
+  border: 0.5px solid black;
+}
+
+.today:hover {
+  background-color: #a13434;
+}
+
+
