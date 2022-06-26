@@ -41,7 +41,7 @@ export default function Slots() {
                 const slots = await fetch(`/api/slot/${date.year}/${date.month}/${date.day}`).then(data => data.json())
                 for (let slot of slots) {
             
-                    if (!startTimes.includes(new Date(slot.start.dateTime).getTime())) startTimes.push(new Date(slot.start.dateTime).getTime())
+                    if (!startTimes.includes(new Date(slot.start.dateTime).getTime()) && slot.summary === "Свободно") startTimes.push(new Date(slot.start.dateTime).getTime())
                     else continue
                     let slotsDiv = document.querySelector('.slots')
                     let slotButton = document.createElement('button')

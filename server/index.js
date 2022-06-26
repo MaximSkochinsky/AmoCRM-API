@@ -337,7 +337,6 @@ const createSlot = (date) => {
       console.log(calendarIds)
       new Promise(resolve => {
         calendarIds.forEach(id => {
-          // console.log('asdasdajsbdkjasdbaskjdbakjdbkasbdkajsdbjkasbdkabsdjkasbdabsdkasbdjkab')
           auth.getClient().then(async a=>{
 
               await calendar.events.insert({
@@ -364,7 +363,7 @@ const createSlot = (date) => {
 }
 
 // createSlot({
-//     year: 2022, 
+//     year: 2021, 
 //     month: 7,
 //     day: 14,
 //     time: 12
